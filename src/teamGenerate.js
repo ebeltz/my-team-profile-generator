@@ -28,7 +28,7 @@ function generateCards(team) {
 let generateManagerCard = (Manager) => {
   return `
   <div class="card m-1 shadow" style="width: 18rem">
-    <div class='card-header'>
+    <div class='card-header bg-primary'>
       <h3 class="card-title">${Manager.getName()}</h3>
       <h6 class="card-text"><i class="fa fa-coffee"></i> ${Manager.getRole()}</h6>
     </div>
@@ -46,8 +46,8 @@ let generateManagerCard = (Manager) => {
 let generateEngineerCard = (Engineer) => {
   return `
   <div class="card m-1 shadow" style="width: 18rem">
-    <div class='card-header'>
-      <h3 class="card-title">${Engineer.getName()}</h3>
+    <div class='card-header bg-primary'>
+      <h3 class="card-title ">${Engineer.getName()}</h3>
       <h6 class="card-text"><i class="fa fa-laptop"></i> ${Engineer.getRole()}</h6>
     </div>
     <div class="card-body">
@@ -64,7 +64,7 @@ let generateEngineerCard = (Engineer) => {
 let generateInternCard = (Intern) => {
   return `
   <div class="card m-1 shadow" style="width: 18rem">
-    <div class='card-header'>
+    <div class='card-header bg-primary'>
       <h3 class="card-title">${Intern.getName()}</h3>
       <h6 class="card-text"><i class="fa fa-graduation-cap"></i> ${Intern.getRole()}</h6>
     </div>
@@ -93,7 +93,7 @@ return `
   <title>My Team</title>
 </head>
 <body>
-<div class="jumbotron jumbotron-fluid bg-warning">
+<div class="jumbotron jumbotron-fluid bg-primary">
   <div class="container">
     <h1 class="display-4 text-center">My Team</h1>
   </div>
